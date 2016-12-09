@@ -41,7 +41,6 @@ class Pokemon {
         
         let url = URL(string:_pokemonUrl)!
         Alamofire.request(.GET, url).responseJSON { response in
-//        Alamofire.request(url, method: .get).responseJSON { response in
             let result = response.result
             print(result.value.debugDescription)
         }
